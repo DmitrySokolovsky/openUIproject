@@ -1,5 +1,23 @@
 <mvc:View
+	controllerName="Frankenstein.controller.MovieDB"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Text text="HI"/>
+	<Page
+		title="Movie DB">
+		<content>
+			<Panel>
+				<content>
+					<Button
+						press="getData"/>
+				</content>
+			</Panel>
+			<List
+			items="{/}">
+				<items>
+					<ObjectListItem
+						intro="{title}"/>
+				</items>
+			</List>
+		</content>
+	</Page>
 </mvc:View>

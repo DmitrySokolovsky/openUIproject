@@ -7,8 +7,15 @@ xmlns:tnt="sap.tnt"
 displayBlock="true">
 	<tnt:ToolHeader>
 		<Button 
+			id="productCard"
 			type="Transparent"
-			text="Product Card"/>
+			text="Product Card"
+			press="onNavPress"/>
+		<Button 
+			id="moviedb"
+			type="Transparent"
+			text="Movie DB"
+			press="onNavPress"/>
 	</tnt:ToolHeader>
 	<App id="appFrankenstein"/>
 </mvc:View>
