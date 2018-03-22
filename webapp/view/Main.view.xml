@@ -10,5 +10,5 @@ displayBlock="true">
 			type="Transparent"
 			text="Product Card"/>
 	</tnt:ToolHeader>
-	<App id="appF"/>
+	<App id="appFrankenstein"/>
 </mvc:View>

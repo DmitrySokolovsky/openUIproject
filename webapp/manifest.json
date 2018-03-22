@@ -78,6 +78,47 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "Frankenstein.view",
+		"controlId": "appFrankenstein",
+		"controlAggregation": "pages",
+		"async": true
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "productCard",
+		  "target": "productCard"
+		},
+		{
+		  "pattern": "moviedb",
+		  "name": "moviedb",
+		  "target": "moviedb"
 		}
+	  ],
+	  "targets": {
+		"productCard": {
+		  "viewID": "productCard",
+		  "viewName": "ProductCard"
+		},
+		"moviedb": {
+		  "viewId": "moviedb",
+		  "viewName": "MovieDB"
+		}
+	  }
 	}
+  }
 }
+
+
+
+
+
+
+
+
+
