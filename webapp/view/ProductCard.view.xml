@@ -1,0 +1,18 @@
+<mvc:View     
+xmlns:html="http://www.w3.org/1999/xhtml" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m"
+xmlns:l="sap.ui.layout"
+displayBlock="true">
+	<l:DynamicSideContent
+		containerQuery="true"
+		sideContentFallDown="BelowL"
+		sideContentPosition="Begin">
+		<l:sideContent>
+			<mvc:XMLView viewName="Frankenstein.view.Form"/>
+		</l:sideContent>
+		<l:mainContent>
+			<mvc:XMLView viewName="Frankenstein.view.ProductList"/>
+		</l:mainContent>
+	</l:DynamicSideContent>
+</mvc:View>

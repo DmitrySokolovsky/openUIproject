@@ -1,0 +1,35 @@
+<mvc:View
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns:f="sap.ui.layout.form"
+controllerName="Frankenstein.controller.FormController">
+	<VBox
+		class="sapUiSmallMarginBegin">
+		<f:SimpleForm
+			width="95%"
+			layout="ResponsiveGridLayout"
+			containerQuery="true">
+				<f:toolbar>
+					<Title text="Add New Product"/>
+			    </f:toolbar>
+				<f:content>
+					<Label text="Product Name"/>
+    				<Input
+						width="100%"
+						id="nameInput"
+						type="Text"/>
+					<Label text="Price"/>
+					<Input 
+						width="100%"
+						id="priceInput" 
+						value="{ 
+							parts: [{path: '/price'}, {path: '/currencyCode'}], 
+							type: 'sap.ui.model.type.Currency', 
+							formatOptions: {showMeasure: false} }"/>
+					<Button
+						text="Add to cart"
+						press="formPress"/>
+				</f:content>
+		</f:SimpleForm>
+	</VBox>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View 
+controllerName="Frankenstein.controller.Main" 
+xmlns:html="http://www.w3.org/1999/xhtml" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m"
+xmlns:tnt="sap.tnt"
+displayBlock="true">
+	<tnt:ToolHeader>
+		<Button 
+			type="Transparent"
+			text="Product Card"/>
+	</tnt:ToolHeader>
+	<App id="appF"/>
+</mvc:View>
